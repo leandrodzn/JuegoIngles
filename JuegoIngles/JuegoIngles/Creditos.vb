@@ -1,3 +1,3 @@
-﻿Public Class Créditos
+﻿Public Class Creditos
 
 End Class

@@ -63,6 +63,7 @@ Partial Class Menu
         Me.Controls.Add(Me.btMAvanzado)
         Me.Controls.Add(Me.btMPrincipiante)
         Me.Name = "Menu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menú "
         Me.ResumeLayout(False)
 

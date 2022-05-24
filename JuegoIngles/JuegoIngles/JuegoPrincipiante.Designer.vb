@@ -26,13 +26,17 @@ Partial Class JuegoPrincipiante
         Me.btComenzar = New System.Windows.Forms.Button()
         Me.btTerminar = New System.Windows.Forms.Button()
         Me.btMenu = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lAciertos = New System.Windows.Forms.Label()
+        Me.lPregunta = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.Location = New System.Drawing.Point(338, 13)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(732, 541)
+        Me.Panel1.Size = New System.Drawing.Size(961, 525)
         Me.Panel1.TabIndex = 0
         '
         'btComenzar
@@ -62,18 +66,59 @@ Partial Class JuegoPrincipiante
         Me.btMenu.Text = "Regresar al menú"
         Me.btMenu.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(127, 236)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(66, 20)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Aciertos:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(123, 326)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(71, 20)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Pregunta:"
+        '
+        'lAciertos
+        '
+        Me.lAciertos.AutoSize = True
+        Me.lAciertos.Location = New System.Drawing.Point(121, 236)
+        Me.lAciertos.Name = "lAciertos"
+        Me.lAciertos.Size = New System.Drawing.Size(0, 20)
+        Me.lAciertos.TabIndex = 7
+        '
+        'lPregunta
+        '
+        Me.lPregunta.AutoSize = True
+        Me.lPregunta.Location = New System.Drawing.Point(121, 326)
+        Me.lPregunta.Name = "lPregunta"
+        Me.lPregunta.Size = New System.Drawing.Size(0, 20)
+        Me.lPregunta.TabIndex = 8
+        '
         'JuegoPrincipiante
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1078, 566)
+        Me.ClientSize = New System.Drawing.Size(1305, 572)
+        Me.Controls.Add(Me.lPregunta)
+        Me.Controls.Add(Me.lAciertos)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btMenu)
         Me.Controls.Add(Me.btTerminar)
         Me.Controls.Add(Me.btComenzar)
         Me.Controls.Add(Me.Panel1)
+        Me.IsMdiContainer = True
         Me.Name = "JuegoPrincipiante"
-        Me.Text = "JuegoPrincipiante"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Modo principiante"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -81,4 +126,8 @@ Partial Class JuegoPrincipiante
     Friend WithEvents btComenzar As Button
     Friend WithEvents btTerminar As Button
     Friend WithEvents btMenu As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents lAciertos As Label
+    Friend WithEvents lPregunta As Label
 End Class
