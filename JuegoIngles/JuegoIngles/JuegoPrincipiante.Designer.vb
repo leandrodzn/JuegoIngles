@@ -22,112 +22,123 @@ Partial Class JuegoPrincipiante
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btComenzar = New System.Windows.Forms.Button()
+        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.lbPregunta = New System.Windows.Forms.Label()
+        Me.lb3 = New System.Windows.Forms.Label()
+        Me.lbAciertos = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.btTerminar = New System.Windows.Forms.Button()
+        Me.btComenzar = New System.Windows.Forms.Button()
         Me.btMenu = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.lAciertos = New System.Windows.Forms.Label()
-        Me.lPregunta = New System.Windows.Forms.Label()
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer1.Panel1.SuspendLayout()
+        Me.SplitContainer1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Panel1
+        'SplitContainer1
         '
-        Me.Panel1.Location = New System.Drawing.Point(338, 13)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(961, 525)
-        Me.Panel1.TabIndex = 0
+        Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer1.Name = "SplitContainer1"
         '
-        'btComenzar
+        'SplitContainer1.Panel1
         '
-        Me.btComenzar.Location = New System.Drawing.Point(30, 116)
-        Me.btComenzar.Name = "btComenzar"
-        Me.btComenzar.Size = New System.Drawing.Size(265, 56)
-        Me.btComenzar.TabIndex = 1
-        Me.btComenzar.Text = "Comenzar partida"
-        Me.btComenzar.UseVisualStyleBackColor = True
+        Me.SplitContainer1.Panel1.Controls.Add(Me.lbPregunta)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.lb3)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.lbAciertos)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Label1)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.btTerminar)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.btComenzar)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.btMenu)
+        Me.SplitContainer1.Size = New System.Drawing.Size(1336, 580)
+        Me.SplitContainer1.SplitterDistance = 349
+        Me.SplitContainer1.TabIndex = 0
+        '
+        'lbPregunta
+        '
+        Me.lbPregunta.AutoSize = True
+        Me.lbPregunta.Location = New System.Drawing.Point(113, 353)
+        Me.lbPregunta.Name = "lbPregunta"
+        Me.lbPregunta.Size = New System.Drawing.Size(0, 20)
+        Me.lbPregunta.TabIndex = 6
+        '
+        'lb3
+        '
+        Me.lb3.AutoSize = True
+        Me.lb3.Location = New System.Drawing.Point(113, 323)
+        Me.lb3.Name = "lb3"
+        Me.lb3.Size = New System.Drawing.Size(71, 20)
+        Me.lb3.TabIndex = 5
+        Me.lb3.Text = "Pregunta:"
+        '
+        'lbAciertos
+        '
+        Me.lbAciertos.AutoSize = True
+        Me.lbAciertos.Location = New System.Drawing.Point(113, 249)
+        Me.lbAciertos.Name = "lbAciertos"
+        Me.lbAciertos.Size = New System.Drawing.Size(0, 20)
+        Me.lbAciertos.TabIndex = 4
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(113, 219)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(66, 20)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Aciertos:"
         '
         'btTerminar
         '
-        Me.btTerminar.Location = New System.Drawing.Point(30, 478)
+        Me.btTerminar.Location = New System.Drawing.Point(17, 453)
         Me.btTerminar.Name = "btTerminar"
-        Me.btTerminar.Size = New System.Drawing.Size(265, 56)
+        Me.btTerminar.Size = New System.Drawing.Size(260, 52)
         Me.btTerminar.TabIndex = 2
         Me.btTerminar.Text = "Terminar partida"
         Me.btTerminar.UseVisualStyleBackColor = True
         '
+        'btComenzar
+        '
+        Me.btComenzar.Location = New System.Drawing.Point(17, 123)
+        Me.btComenzar.Name = "btComenzar"
+        Me.btComenzar.Size = New System.Drawing.Size(260, 52)
+        Me.btComenzar.TabIndex = 1
+        Me.btComenzar.Text = "Comenzar partida"
+        Me.btComenzar.UseVisualStyleBackColor = True
+        '
         'btMenu
         '
-        Me.btMenu.Location = New System.Drawing.Point(30, 13)
+        Me.btMenu.Location = New System.Drawing.Point(17, 13)
         Me.btMenu.Name = "btMenu"
-        Me.btMenu.Size = New System.Drawing.Size(265, 56)
-        Me.btMenu.TabIndex = 3
+        Me.btMenu.Size = New System.Drawing.Size(260, 52)
+        Me.btMenu.TabIndex = 0
         Me.btMenu.Text = "Regresar al menú"
         Me.btMenu.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(127, 236)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(66, 20)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Aciertos:"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(123, 326)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(71, 20)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Pregunta:"
-        '
-        'lAciertos
-        '
-        Me.lAciertos.AutoSize = True
-        Me.lAciertos.Location = New System.Drawing.Point(121, 236)
-        Me.lAciertos.Name = "lAciertos"
-        Me.lAciertos.Size = New System.Drawing.Size(0, 20)
-        Me.lAciertos.TabIndex = 7
-        '
-        'lPregunta
-        '
-        Me.lPregunta.AutoSize = True
-        Me.lPregunta.Location = New System.Drawing.Point(121, 326)
-        Me.lPregunta.Name = "lPregunta"
-        Me.lPregunta.Size = New System.Drawing.Size(0, 20)
-        Me.lPregunta.TabIndex = 8
         '
         'JuegoPrincipiante
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1305, 572)
-        Me.Controls.Add(Me.lPregunta)
-        Me.Controls.Add(Me.lAciertos)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.btMenu)
-        Me.Controls.Add(Me.btTerminar)
-        Me.Controls.Add(Me.btComenzar)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(1336, 580)
+        Me.Controls.Add(Me.SplitContainer1)
         Me.IsMdiContainer = True
         Me.Name = "JuegoPrincipiante"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Modo principiante"
+        Me.Text = "JuegoPrincipiante"
+        Me.SplitContainer1.Panel1.ResumeLayout(False)
+        Me.SplitContainer1.Panel1.PerformLayout()
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer1.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents btComenzar As Button
+    Friend WithEvents SplitContainer1 As SplitContainer
+    Friend WithEvents lbPregunta As Label
+    Friend WithEvents lb3 As Label
+    Friend WithEvents lbAciertos As Label
+    Friend WithEvents Label1 As Label
     Friend WithEvents btTerminar As Button
+    Friend WithEvents btComenzar As Button
     Friend WithEvents btMenu As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents lAciertos As Label
-    Friend WithEvents lPregunta As Label
 End Class

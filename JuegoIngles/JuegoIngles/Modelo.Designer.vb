@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class PPrinci1
+Partial Class Modelo
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -25,51 +25,77 @@ Partial Class PPrinci1
         Me.btR1 = New System.Windows.Forms.Button()
         Me.btR2 = New System.Windows.Forms.Button()
         Me.btR3 = New System.Windows.Forms.Button()
+        Me.btR4 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btR1
         '
-        Me.btR1.Location = New System.Drawing.Point(53, 315)
+        Me.btR1.Location = New System.Drawing.Point(53, 348)
         Me.btR1.Name = "btR1"
-        Me.btR1.Size = New System.Drawing.Size(242, 121)
+        Me.btR1.Size = New System.Drawing.Size(388, 75)
         Me.btR1.TabIndex = 0
         Me.btR1.Text = "Respuesta 1"
         Me.btR1.UseVisualStyleBackColor = True
         '
         'btR2
         '
-        Me.btR2.Location = New System.Drawing.Point(362, 315)
+        Me.btR2.Location = New System.Drawing.Point(501, 348)
         Me.btR2.Name = "btR2"
-        Me.btR2.Size = New System.Drawing.Size(242, 121)
+        Me.btR2.Size = New System.Drawing.Size(388, 75)
         Me.btR2.TabIndex = 1
         Me.btR2.Text = "Respuesta 2"
         Me.btR2.UseVisualStyleBackColor = True
         '
         'btR3
         '
-        Me.btR3.Location = New System.Drawing.Point(666, 315)
+        Me.btR3.Location = New System.Drawing.Point(53, 449)
         Me.btR3.Name = "btR3"
-        Me.btR3.Size = New System.Drawing.Size(242, 121)
+        Me.btR3.Size = New System.Drawing.Size(388, 75)
         Me.btR3.TabIndex = 2
         Me.btR3.Text = "Respuesta 3"
         Me.btR3.UseVisualStyleBackColor = True
         '
-        'PPrinci1
+        'btR4
+        '
+        Me.btR4.Location = New System.Drawing.Point(501, 449)
+        Me.btR4.Name = "btR4"
+        Me.btR4.Size = New System.Drawing.Size(388, 75)
+        Me.btR4.TabIndex = 3
+        Me.btR4.Text = "Respuesta 4"
+        Me.btR4.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(279, 22)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(382, 290)
+        Me.PictureBox1.TabIndex = 4
+        Me.PictureBox1.TabStop = False
+        '
+        'Modelo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(961, 525)
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.ClientSize = New System.Drawing.Size(961, 564)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.btR4)
         Me.Controls.Add(Me.btR3)
         Me.Controls.Add(Me.btR2)
         Me.Controls.Add(Me.btR1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "PPrinci1"
+        Me.Name = "Modelo"
         Me.Text = "PPrinci1"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents btR1 As Button
-    Friend WithEvents btR2 As Button
-    Friend WithEvents btR3 As Button
+    Public WithEvents PictureBox1 As PictureBox
+    Public WithEvents btR1 As Button
+    Public WithEvents btR2 As Button
+    Public WithEvents btR3 As Button
+    Public WithEvents btR4 As Button
 End Class

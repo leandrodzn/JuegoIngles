@@ -25,11 +25,12 @@ Partial Class Menu
         Me.btMPrincipiante = New System.Windows.Forms.Button()
         Me.btMAvanzado = New System.Windows.Forms.Button()
         Me.btCreditos = New System.Windows.Forms.Button()
+        Me.btSalir = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btMPrincipiante
         '
-        Me.btMPrincipiante.Location = New System.Drawing.Point(285, 192)
+        Me.btMPrincipiante.Location = New System.Drawing.Point(285, 178)
         Me.btMPrincipiante.Name = "btMPrincipiante"
         Me.btMPrincipiante.Size = New System.Drawing.Size(283, 71)
         Me.btMPrincipiante.TabIndex = 0
@@ -38,7 +39,7 @@ Partial Class Menu
         '
         'btMAvanzado
         '
-        Me.btMAvanzado.Location = New System.Drawing.Point(285, 269)
+        Me.btMAvanzado.Location = New System.Drawing.Point(285, 255)
         Me.btMAvanzado.Name = "btMAvanzado"
         Me.btMAvanzado.Size = New System.Drawing.Size(283, 71)
         Me.btMAvanzado.TabIndex = 1
@@ -47,18 +48,28 @@ Partial Class Menu
         '
         'btCreditos
         '
-        Me.btCreditos.Location = New System.Drawing.Point(285, 346)
+        Me.btCreditos.Location = New System.Drawing.Point(285, 332)
         Me.btCreditos.Name = "btCreditos"
         Me.btCreditos.Size = New System.Drawing.Size(283, 71)
         Me.btCreditos.TabIndex = 2
         Me.btCreditos.Text = "Créditos"
         Me.btCreditos.UseVisualStyleBackColor = True
         '
+        'btSalir
+        '
+        Me.btSalir.Location = New System.Drawing.Point(285, 409)
+        Me.btSalir.Name = "btSalir"
+        Me.btSalir.Size = New System.Drawing.Size(283, 71)
+        Me.btSalir.TabIndex = 3
+        Me.btSalir.Text = "Salir"
+        Me.btSalir.UseVisualStyleBackColor = True
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(870, 492)
+        Me.Controls.Add(Me.btSalir)
         Me.Controls.Add(Me.btCreditos)
         Me.Controls.Add(Me.btMAvanzado)
         Me.Controls.Add(Me.btMPrincipiante)
@@ -72,4 +83,5 @@ Partial Class Menu
     Friend WithEvents btMPrincipiante As Button
     Friend WithEvents btMAvanzado As Button
     Friend WithEvents btCreditos As Button
+    Friend WithEvents btSalir As Button
 End Class
