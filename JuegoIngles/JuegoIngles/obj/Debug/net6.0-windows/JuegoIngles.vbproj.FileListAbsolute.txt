@@ -1,6 +1,5 @@
 C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\obj\Debug\net6.0-windows\JuegoIngles.vbproj.AssemblyReference.cache
 C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\obj\Debug\net6.0-windows\JuegoIngles.Creditos.resources
-C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\obj\Debug\net6.0-windows\JuegoIngles.JuegoAvanzado.resources
 C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\obj\Debug\net6.0-windows\JuegoIngles.JuegoPrincipiante.resources
 C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\obj\Debug\net6.0-windows\JuegoIngles.Menu.resources
 C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\obj\Debug\net6.0-windows\JuegoIngles.vbproj.GenerateResource.cache

@@ -5,8 +5,7 @@
     End Sub
 
     Private Sub btMAvanzado_Click(sender As Object, e As EventArgs) Handles btMAvanzado.Click
-        JuegoAvanzado.Show()
-        Me.Hide()
+
     End Sub
 
     Private Sub btCreditos_Click(sender As Object, e As EventArgs) Handles btCreditos.Click

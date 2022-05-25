@@ -27,6 +27,7 @@ Partial Class Modelo
         Me.btR3 = New System.Windows.Forms.Button()
         Me.btR4 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btSonido = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -71,8 +72,18 @@ Partial Class Modelo
         Me.PictureBox1.Location = New System.Drawing.Point(279, 22)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(382, 290)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
+        '
+        'btSonido
+        '
+        Me.btSonido.Location = New System.Drawing.Point(53, 87)
+        Me.btSonido.Name = "btSonido"
+        Me.btSonido.Size = New System.Drawing.Size(92, 74)
+        Me.btSonido.TabIndex = 5
+        Me.btSonido.Text = "Sonido"
+        Me.btSonido.UseVisualStyleBackColor = True
         '
         'Modelo
         '
@@ -80,6 +91,7 @@ Partial Class Modelo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(961, 564)
+        Me.Controls.Add(Me.btSonido)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btR4)
         Me.Controls.Add(Me.btR3)
@@ -98,4 +110,5 @@ Partial Class Modelo
     Public WithEvents btR2 As Button
     Public WithEvents btR3 As Button
     Public WithEvents btR4 As Button
+    Friend WithEvents btSonido As Button
 End Class

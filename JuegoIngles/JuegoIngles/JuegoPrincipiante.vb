@@ -2,7 +2,6 @@
 
     Dim hijo As New Modelo
     Dim abiertos() As Integer = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
-    Dim ultimo As String
     Dim contadorPregunta As Integer = 0
     Dim num As String
     Dim bandera As Boolean
@@ -21,6 +20,8 @@
         btMenu.Enabled = False
         btTerminar.Enabled = True
 
+        abrirPalabra(1)
+
 
         Me.SplitContainer1.Panel2.Controls.Add(hijo)
         hijo.Show()
@@ -30,6 +31,8 @@
         btComenzar.Enabled = True
         btMenu.Enabled = True
         btTerminar.Enabled = False
+        hijo.Hide()
+
     End Sub
 
     Private Sub btMenu_Click(sender As Object, e As EventArgs) Handles btMenu.Click
@@ -82,5 +85,33 @@
         Return num
     End Function
 
+    Private Sub abrirPalabra(numero As Integer)
+        Select Case numero
+            Case 1
+                hijo.numero = "1"
+                hijo.valorB1 = "perro"
+            Case 2
+            Case 3
+            Case 4
+            Case 5
+            Case 6
+            Case 7
+            Case 8
+            Case 9
+            Case 10
+            Case 11
+            Case 12
+            Case 13
+            Case 14
+            Case 15
+            Case 16
+            Case 17
+            Case 18
+            Case 19
+            Case 20
+        End Select
+
+
+    End Sub
 
 End Class

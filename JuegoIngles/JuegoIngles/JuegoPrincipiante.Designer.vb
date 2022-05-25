@@ -57,7 +57,7 @@ Partial Class JuegoPrincipiante
         'lbPregunta
         '
         Me.lbPregunta.AutoSize = True
-        Me.lbPregunta.Location = New System.Drawing.Point(113, 353)
+        Me.lbPregunta.Location = New System.Drawing.Point(131, 376)
         Me.lbPregunta.Name = "lbPregunta"
         Me.lbPregunta.Size = New System.Drawing.Size(0, 20)
         Me.lbPregunta.TabIndex = 6
@@ -65,7 +65,7 @@ Partial Class JuegoPrincipiante
         'lb3
         '
         Me.lb3.AutoSize = True
-        Me.lb3.Location = New System.Drawing.Point(113, 323)
+        Me.lb3.Location = New System.Drawing.Point(131, 346)
         Me.lb3.Name = "lb3"
         Me.lb3.Size = New System.Drawing.Size(71, 20)
         Me.lb3.TabIndex = 5
@@ -74,7 +74,7 @@ Partial Class JuegoPrincipiante
         'lbAciertos
         '
         Me.lbAciertos.AutoSize = True
-        Me.lbAciertos.Location = New System.Drawing.Point(113, 249)
+        Me.lbAciertos.Location = New System.Drawing.Point(131, 272)
         Me.lbAciertos.Name = "lbAciertos"
         Me.lbAciertos.Size = New System.Drawing.Size(0, 20)
         Me.lbAciertos.TabIndex = 4
@@ -82,7 +82,7 @@ Partial Class JuegoPrincipiante
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(113, 219)
+        Me.Label1.Location = New System.Drawing.Point(131, 242)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(66, 20)
         Me.Label1.TabIndex = 3
@@ -90,7 +90,7 @@ Partial Class JuegoPrincipiante
         '
         'btTerminar
         '
-        Me.btTerminar.Location = New System.Drawing.Point(17, 453)
+        Me.btTerminar.Location = New System.Drawing.Point(35, 476)
         Me.btTerminar.Name = "btTerminar"
         Me.btTerminar.Size = New System.Drawing.Size(260, 52)
         Me.btTerminar.TabIndex = 2
@@ -99,7 +99,7 @@ Partial Class JuegoPrincipiante
         '
         'btComenzar
         '
-        Me.btComenzar.Location = New System.Drawing.Point(17, 123)
+        Me.btComenzar.Location = New System.Drawing.Point(35, 146)
         Me.btComenzar.Name = "btComenzar"
         Me.btComenzar.Size = New System.Drawing.Size(260, 52)
         Me.btComenzar.TabIndex = 1
@@ -108,7 +108,7 @@ Partial Class JuegoPrincipiante
         '
         'btMenu
         '
-        Me.btMenu.Location = New System.Drawing.Point(17, 13)
+        Me.btMenu.Location = New System.Drawing.Point(35, 36)
         Me.btMenu.Name = "btMenu"
         Me.btMenu.Size = New System.Drawing.Size(260, 52)
         Me.btMenu.TabIndex = 0
@@ -124,7 +124,7 @@ Partial Class JuegoPrincipiante
         Me.IsMdiContainer = True
         Me.Name = "JuegoPrincipiante"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "JuegoPrincipiante"
+        Me.Text = "Modo principiante"
         Me.SplitContainer1.Panel1.ResumeLayout(False)
         Me.SplitContainer1.Panel1.PerformLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
