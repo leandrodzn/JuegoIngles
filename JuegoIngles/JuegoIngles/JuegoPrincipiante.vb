@@ -13,35 +13,55 @@
 
     Private Sub JuegoPrincipiante_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btTerminar.Enabled = False
+
         hijo.MdiParent = Me
+        hijo.esPrincipiante = True
+
         btSiguiente.Enabled = False
     End Sub
 
     Private Sub btComenzar_Click(sender As Object, e As EventArgs) Handles btComenzar.Click
+        'habilida y deshabilita botones
         btComenzar.Enabled = False
         btMenu.Enabled = False
         btTerminar.Enabled = True
         btSiguiente.Enabled = True
 
+        'reinicia los puntajes
+        hijo.puntuacion = 0
+
+
+        'inicializa a 0s el arreglo de palabras ya mostradas
         abiertos = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
         contadorPregunta = 0
-        abrirPalabra(numeroRandom())
-        puntaje = 0
-        lbAciertos.Text = 0
-        lbPregunta.Text = contadorPregunta
-
-
+        'abre una ventana de una palabra
+        abrirPalabra2(numeroRandom())
+        hijo.actualizar()
         Me.SplitContainer1.Panel2.Controls.Add(hijo)
         hijo.Show()
+        contadorPregunta += 1 'incrementa el contador de las preguntas
+        puntaje = 0
+        lbAciertos.Text = 0
+        lbPregunta.Text = (contadorPregunta & "/10")
+
+
     End Sub
 
     Private Sub btTerminar_Click(sender As Object, e As EventArgs) Handles btTerminar.Click
+        'habilida botones
         btComenzar.Enabled = True
         btMenu.Enabled = True
+        'deshabilida botones
         btTerminar.Enabled = False
-        hijo.Hide()
         btSiguiente.Enabled = False
+        'limpia el panel
         Me.SplitContainer1.Panel2.Controls.Clear()
+
+        'mensaje de aciertos
+        Dim strTitulo As String = "Terminó la partida"
+        Dim strTexto As String = "Finalizó con " & lbAciertos.Text & " aciertos"
+        Dim style As MsgBoxStyle = MsgBoxStyle.Information
+        Dim response As Integer = MsgBox(strTexto, style, strTitulo)
 
 
     End Sub
@@ -78,15 +98,14 @@
 
         Loop While (bandera = True)
 
-        'si el numero no existe busca en que parte del areglo alojarlo 
+        'si el numero no existe busca en que parte del arreglo de palabras ya mostradas guardalo
 
 
         For y = 0 To 9 Step 1
 
             If abiertos(y) = 0 Then
                 abiertos(y) = num
-                contadorPregunta = contadorPregunta + 1
-                y = 10
+                Exit For
             End If
 
         Next
@@ -95,19 +114,22 @@
         Return num
     End Function
 
-    Private Sub abrirPalabra(numero As Integer)
+    Private Sub abrirPalabra2(numero As Integer)
         Select Case numero
             Case 1
+                'manda numero de palabra, palabra correcta, y palabras a mostrar como opción
                 hijo.numero = "1"
                 hijo.palabra = "Apple"
                 hijo.valorB1 = "Apple"
                 hijo.valorB2 = "Aple"
                 hijo.valorB3 = "Apul"
                 hijo.valorB4 = "Appl"
+                'indica cual botón tiene la respuesta correcta
                 hijo.banderaB1 = True
                 hijo.banderaB2 = False
                 hijo.banderaB3 = False
                 hijo.banderaB4 = False
+
             Case 2
                 hijo.numero = "2"
                 hijo.palabra = "House"
@@ -119,6 +141,7 @@
                 hijo.banderaB2 = True
                 hijo.banderaB3 = False
                 hijo.banderaB4 = False
+
             Case 3
                 hijo.numero = "3"
                 hijo.palabra = "Pencil"
@@ -130,6 +153,7 @@
                 hijo.banderaB2 = False
                 hijo.banderaB3 = False
                 hijo.banderaB4 = True
+
             Case 4
                 hijo.numero = "4"
                 hijo.palabra = "Book"
@@ -141,6 +165,7 @@
                 hijo.banderaB2 = True
                 hijo.banderaB3 = False
                 hijo.banderaB4 = False
+
             Case 5
                 hijo.numero = "5"
                 hijo.palabra = "Dog"
@@ -152,6 +177,7 @@
                 hijo.banderaB2 = False
                 hijo.banderaB3 = True
                 hijo.banderaB4 = False
+
             Case 6
                 hijo.numero = "6"
                 hijo.palabra = "Blue"
@@ -163,6 +189,7 @@
                 hijo.banderaB2 = False
                 hijo.banderaB3 = False
                 hijo.banderaB4 = False
+
             Case 7
                 hijo.numero = "7"
                 hijo.palabra = "Red"
@@ -174,6 +201,7 @@
                 hijo.banderaB2 = False
                 hijo.banderaB3 = False
                 hijo.banderaB4 = True
+
             Case 8
                 hijo.numero = "8"
                 hijo.palabra = "Cat"
@@ -185,6 +213,7 @@
                 hijo.banderaB2 = True
                 hijo.banderaB3 = False
                 hijo.banderaB4 = False
+
             Case 9
                 hijo.numero = "9"
                 hijo.palabra = "Boy"
@@ -196,6 +225,7 @@
                 hijo.banderaB2 = False
                 hijo.banderaB3 = True
                 hijo.banderaB4 = False
+
             Case 10
                 hijo.numero = "10"
                 hijo.palabra = "Car"
@@ -207,6 +237,7 @@
                 hijo.banderaB2 = False
                 hijo.banderaB3 = False
                 hijo.banderaB4 = True
+
             Case 11
                 hijo.numero = "11"
                 hijo.palabra = "Paper"
@@ -218,6 +249,7 @@
                 hijo.banderaB2 = False
                 hijo.banderaB3 = False
                 hijo.banderaB4 = False
+
             Case 12
                 hijo.numero = "12"
                 hijo.palabra = "Cake"
@@ -229,8 +261,11 @@
                 hijo.banderaB2 = False
                 hijo.banderaB3 = False
                 hijo.banderaB4 = False
+
             Case 13
                 hijo.numero = "13"
+                hijo.palabra = "Rain"
+                hijo.palabra = "Rain"
                 hijo.palabra = "Rain"
                 hijo.valorB1 = "Rhain"
                 hijo.valorB2 = "Rain"
@@ -240,6 +275,7 @@
                 hijo.banderaB2 = True
                 hijo.banderaB3 = False
                 hijo.banderaB4 = False
+
             Case 14
                 hijo.numero = "14"
                 hijo.palabra = "Bird"
@@ -251,6 +287,7 @@
                 hijo.banderaB2 = False
                 hijo.banderaB3 = False
                 hijo.banderaB4 = True
+
             Case 15
                 hijo.numero = "15"
                 hijo.palabra = "Lion"
@@ -262,6 +299,7 @@
                 hijo.banderaB2 = True
                 hijo.banderaB3 = False
                 hijo.banderaB4 = False
+
             Case 16
                 hijo.numero = "16"
                 hijo.palabra = "Happy"
@@ -273,6 +311,7 @@
                 hijo.banderaB2 = True
                 hijo.banderaB3 = False
                 hijo.banderaB4 = False
+
             Case 17
                 hijo.numero = "17"
                 hijo.palabra = "Sun"
@@ -284,17 +323,19 @@
                 hijo.banderaB2 = False
                 hijo.banderaB3 = True
                 hijo.banderaB4 = False
+
             Case 18
                 hijo.numero = "18"
-                hijo.palabra = "School"
-                hijo.valorB1 = "Skool"
-                hijo.valorB2 = "School"
-                hijo.valorB3 = "Scool"
-                hijo.valorB4 = "Eschool"
+                hijo.palabra = "Sad"
+                hijo.valorB1 = "Sad"
+                hijo.valorB2 = "Zad"
+                hijo.valorB3 = "Sat"
+                hijo.valorB4 = "Sath"
                 hijo.banderaB1 = True
                 hijo.banderaB2 = False
                 hijo.banderaB3 = False
                 hijo.banderaB4 = False
+
             Case 19
                 hijo.numero = "19"
                 hijo.palabra = "Open"
@@ -306,6 +347,7 @@
                 hijo.banderaB2 = False
                 hijo.banderaB3 = True
                 hijo.banderaB4 = False
+
             Case 20
                 hijo.numero = "20"
                 hijo.palabra = "Nurse"
@@ -317,20 +359,38 @@
                 hijo.banderaB2 = False
                 hijo.banderaB3 = True
                 hijo.banderaB4 = False
+
+
         End Select
 
 
     End Sub
 
     Private Sub btSiguiente_Click(sender As Object, e As EventArgs) Handles btSiguiente.Click
-        Me.SplitContainer1.Panel2.Controls.Clear()
+        'lee los puntajes de las ventanas
         puntaje += hijo.puntuacion
+
+        'reinicia los puntajes
+        hijo.puntuacion = 0
+
+        'limpia el panel
+        Me.SplitContainer1.Panel2.Controls.Clear()
         lbAciertos.Text = puntaje
-        Do While contadorPregunta <= 9
-            abrirPalabra(numeroRandom())
-            lbPregunta.Text = contadorPregunta
+        If contadorPregunta < 10 Then 'si aun no ha terminado de mostrar 10 palabras
+            contadorPregunta += 1
+            abrirPalabra2(numeroRandom())
+            hijo.actualizar()
             Me.SplitContainer1.Panel2.Controls.Add(hijo)
             hijo.Show()
-        Loop
+            lbPregunta.Text = (contadorPregunta & "/10")
+        Else
+            btSiguiente.Enabled = False 'deshabilita el botón siguiente
+            Dim strTitulo As String = "Juego finalizado"
+            Dim strTexto As String = "Presione 'Terminar partida' para poder comenzar una nueva"
+            Dim style As MsgBoxStyle = MsgBoxStyle.Information
+            Dim response As Integer = MsgBox(strTexto, style, strTitulo)
+        End If
     End Sub
+
+
 End Class

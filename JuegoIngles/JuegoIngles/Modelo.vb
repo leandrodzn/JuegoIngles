@@ -6,22 +6,45 @@
     Public valorB4 As String
     Public palabra As String
     Public numero As String
-    Public banderaB1 As Boolean = False
-    Public banderaB2 As Boolean = False
-    Public banderaB3 As Boolean = False
-    Public banderaB4 As Boolean = False
+    Public banderaB1 As Boolean
+    Public banderaB2 As Boolean
+    Public banderaB3 As Boolean
+    Public banderaB4 As Boolean
     Public puntuacion As Integer
+    Public esPrincipiante As Boolean
+    Dim s As System.Media.SoundPlayer
 
     Private Sub Modelo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        actualizar()
+
+
+
+        'Me.PictureBox1.Image = Image.FromFile("C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\images\Prin" + numero + ".png")
+
+
+
+    End Sub
+
+    Public Sub actualizar()
         btR1.Text = valorB1
         btR2.Text = valorB2
         btR3.Text = valorB3
         btR4.Text = valorB4
         puntuacion = 0
+        btR1.Enabled = True
+        btR2.Enabled = True
+        btR3.Enabled = True
+        btR4.Enabled = True
 
-        Me.PictureBox1.Image = Image.FromFile("C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\images\Prin" + numero + ".png")
+        If esPrincipiante Then
+            Me.PictureBox1.Image = Image.FromFile(My.Application.Info.DirectoryPath + "\images\Prin" + numero + ".png")
+            s = New System.Media.SoundPlayer(My.Application.Info.DirectoryPath + "\audios\principiante" + numero + ".wav")
 
-
+        Else
+            Me.PictureBox1.Image = Image.FromFile(My.Application.Info.DirectoryPath + "\images\Avanzado" + numero + ".png")
+            s = New System.Media.SoundPlayer(My.Application.Info.DirectoryPath + "\audios\avanzado" + numero + ".wav")
+        End If
     End Sub
 
     Private Sub btR1_Click(sender As Object, e As EventArgs) Handles btR1.Click
@@ -115,5 +138,9 @@
             btR3.Enabled = False
             btR4.Enabled = False
         End If
+    End Sub
+
+    Private Sub btSonido_Click(sender As Object, e As EventArgs) Handles btSonido.Click
+        s.Play()
     End Sub
 End Class
