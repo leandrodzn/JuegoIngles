@@ -15,6 +15,7 @@
         btTerminar.Enabled = False
 
         hijo.MdiParent = Me
+        'indica si es el modo principiante o avanzado para seleccionar las imagenes y palabras
         hijo.esPrincipiante = True
 
         btSiguiente.Enabled = False
