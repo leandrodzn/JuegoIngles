@@ -33,39 +33,43 @@ Partial Class Modelo
         '
         'btR1
         '
+        Me.btR1.BackColor = System.Drawing.Color.White
         Me.btR1.Location = New System.Drawing.Point(53, 348)
         Me.btR1.Name = "btR1"
         Me.btR1.Size = New System.Drawing.Size(388, 75)
         Me.btR1.TabIndex = 0
         Me.btR1.Text = "Respuesta 1"
-        Me.btR1.UseVisualStyleBackColor = True
+        Me.btR1.UseVisualStyleBackColor = False
         '
         'btR2
         '
+        Me.btR2.BackColor = System.Drawing.Color.White
         Me.btR2.Location = New System.Drawing.Point(501, 348)
         Me.btR2.Name = "btR2"
         Me.btR2.Size = New System.Drawing.Size(388, 75)
         Me.btR2.TabIndex = 1
         Me.btR2.Text = "Respuesta 2"
-        Me.btR2.UseVisualStyleBackColor = True
+        Me.btR2.UseVisualStyleBackColor = False
         '
         'btR3
         '
+        Me.btR3.BackColor = System.Drawing.Color.White
         Me.btR3.Location = New System.Drawing.Point(53, 449)
         Me.btR3.Name = "btR3"
         Me.btR3.Size = New System.Drawing.Size(388, 75)
         Me.btR3.TabIndex = 2
         Me.btR3.Text = "Respuesta 3"
-        Me.btR3.UseVisualStyleBackColor = True
+        Me.btR3.UseVisualStyleBackColor = False
         '
         'btR4
         '
+        Me.btR4.BackColor = System.Drawing.Color.White
         Me.btR4.Location = New System.Drawing.Point(501, 449)
         Me.btR4.Name = "btR4"
         Me.btR4.Size = New System.Drawing.Size(388, 75)
         Me.btR4.TabIndex = 3
         Me.btR4.Text = "Respuesta 4"
-        Me.btR4.UseVisualStyleBackColor = True
+        Me.btR4.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -78,18 +82,19 @@ Partial Class Modelo
         '
         'btSonido
         '
+        Me.btSonido.BackColor = System.Drawing.Color.White
         Me.btSonido.Location = New System.Drawing.Point(53, 87)
         Me.btSonido.Name = "btSonido"
         Me.btSonido.Size = New System.Drawing.Size(92, 74)
         Me.btSonido.TabIndex = 5
         Me.btSonido.Text = "Sonido"
-        Me.btSonido.UseVisualStyleBackColor = True
+        Me.btSonido.UseVisualStyleBackColor = False
         '
         'Modelo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(187, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(961, 564)
         Me.Controls.Add(Me.btSonido)
         Me.Controls.Add(Me.PictureBox1)

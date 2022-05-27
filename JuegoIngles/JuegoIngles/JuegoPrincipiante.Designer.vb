@@ -23,6 +23,7 @@ Partial Class JuegoPrincipiante
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.btSiguiente = New System.Windows.Forms.Button()
         Me.lbPregunta = New System.Windows.Forms.Label()
         Me.lb3 = New System.Windows.Forms.Label()
         Me.lbAciertos = New System.Windows.Forms.Label()
@@ -30,7 +31,6 @@ Partial Class JuegoPrincipiante
         Me.btTerminar = New System.Windows.Forms.Button()
         Me.btComenzar = New System.Windows.Forms.Button()
         Me.btMenu = New System.Windows.Forms.Button()
-        Me.btSiguiente = New System.Windows.Forms.Button()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
@@ -44,6 +44,7 @@ Partial Class JuegoPrincipiante
         '
         'SplitContainer1.Panel1
         '
+        Me.SplitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(30, Byte), Integer))
         Me.SplitContainer1.Panel1.Controls.Add(Me.btSiguiente)
         Me.SplitContainer1.Panel1.Controls.Add(Me.lbPregunta)
         Me.SplitContainer1.Panel1.Controls.Add(Me.lb3)
@@ -52,79 +53,95 @@ Partial Class JuegoPrincipiante
         Me.SplitContainer1.Panel1.Controls.Add(Me.btTerminar)
         Me.SplitContainer1.Panel1.Controls.Add(Me.btComenzar)
         Me.SplitContainer1.Panel1.Controls.Add(Me.btMenu)
+        '
+        'SplitContainer1.Panel2
+        '
+        Me.SplitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(187, Byte), Integer))
         Me.SplitContainer1.Size = New System.Drawing.Size(1336, 580)
         Me.SplitContainer1.SplitterDistance = 349
         Me.SplitContainer1.TabIndex = 0
         '
+        'btSiguiente
+        '
+        Me.btSiguiente.BackColor = System.Drawing.Color.White
+        Me.btSiguiente.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btSiguiente.Location = New System.Drawing.Point(35, 416)
+        Me.btSiguiente.Name = "btSiguiente"
+        Me.btSiguiente.Size = New System.Drawing.Size(260, 52)
+        Me.btSiguiente.TabIndex = 7
+        Me.btSiguiente.Text = "Siguiente pregunta"
+        Me.btSiguiente.UseVisualStyleBackColor = False
+        '
         'lbPregunta
         '
         Me.lbPregunta.AutoSize = True
-        Me.lbPregunta.Location = New System.Drawing.Point(131, 376)
+        Me.lbPregunta.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lbPregunta.Location = New System.Drawing.Point(131, 360)
         Me.lbPregunta.Name = "lbPregunta"
-        Me.lbPregunta.Size = New System.Drawing.Size(0, 20)
+        Me.lbPregunta.Size = New System.Drawing.Size(0, 23)
         Me.lbPregunta.TabIndex = 6
         '
         'lb3
         '
         Me.lb3.AutoSize = True
-        Me.lb3.Location = New System.Drawing.Point(131, 346)
+        Me.lb3.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lb3.Location = New System.Drawing.Point(131, 330)
         Me.lb3.Name = "lb3"
-        Me.lb3.Size = New System.Drawing.Size(71, 20)
+        Me.lb3.Size = New System.Drawing.Size(84, 23)
         Me.lb3.TabIndex = 5
         Me.lb3.Text = "Pregunta:"
         '
         'lbAciertos
         '
         Me.lbAciertos.AutoSize = True
+        Me.lbAciertos.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lbAciertos.Location = New System.Drawing.Point(131, 272)
         Me.lbAciertos.Name = "lbAciertos"
-        Me.lbAciertos.Size = New System.Drawing.Size(0, 20)
+        Me.lbAciertos.Size = New System.Drawing.Size(0, 23)
         Me.lbAciertos.TabIndex = 4
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.Location = New System.Drawing.Point(131, 242)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(66, 20)
+        Me.Label1.Size = New System.Drawing.Size(75, 23)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Aciertos:"
         '
         'btTerminar
         '
+        Me.btTerminar.BackColor = System.Drawing.Color.White
+        Me.btTerminar.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btTerminar.Location = New System.Drawing.Point(35, 516)
         Me.btTerminar.Name = "btTerminar"
         Me.btTerminar.Size = New System.Drawing.Size(260, 52)
         Me.btTerminar.TabIndex = 2
         Me.btTerminar.Text = "Terminar partida"
-        Me.btTerminar.UseVisualStyleBackColor = True
+        Me.btTerminar.UseVisualStyleBackColor = False
         '
         'btComenzar
         '
+        Me.btComenzar.BackColor = System.Drawing.Color.White
+        Me.btComenzar.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btComenzar.Location = New System.Drawing.Point(35, 146)
         Me.btComenzar.Name = "btComenzar"
         Me.btComenzar.Size = New System.Drawing.Size(260, 52)
         Me.btComenzar.TabIndex = 1
         Me.btComenzar.Text = "Comenzar partida"
-        Me.btComenzar.UseVisualStyleBackColor = True
+        Me.btComenzar.UseVisualStyleBackColor = False
         '
         'btMenu
         '
+        Me.btMenu.BackColor = System.Drawing.Color.White
+        Me.btMenu.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btMenu.Location = New System.Drawing.Point(35, 36)
         Me.btMenu.Name = "btMenu"
         Me.btMenu.Size = New System.Drawing.Size(260, 52)
         Me.btMenu.TabIndex = 0
         Me.btMenu.Text = "Regresar al menú"
-        Me.btMenu.UseVisualStyleBackColor = True
-        '
-        'btSiguiente
-        '
-        Me.btSiguiente.Location = New System.Drawing.Point(35, 416)
-        Me.btSiguiente.Name = "btSiguiente"
-        Me.btSiguiente.Size = New System.Drawing.Size(260, 52)
-        Me.btSiguiente.TabIndex = 7
-        Me.btSiguiente.Text = "Siguiente pregunta"
-        Me.btSiguiente.UseVisualStyleBackColor = True
+        Me.btMenu.UseVisualStyleBackColor = False
         '
         'JuegoPrincipiante
         '

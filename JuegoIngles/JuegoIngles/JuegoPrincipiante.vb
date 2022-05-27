@@ -20,9 +20,12 @@
             Me.Text = "Modo Principiante"
             'indica si es el modo principiante o avanzado para seleccionar las imagenes y palabras
             hijo.esPrincipiante = True
+            hijo.BackColor = Color.FromArgb(195, 254, 139)
+
 
         Else
             hijo.esPrincipiante = False
+            hijo.BackColor = Color.FromArgb(254, 176, 139)
             Me.Text = "Modo Avanzado"
         End If
 
