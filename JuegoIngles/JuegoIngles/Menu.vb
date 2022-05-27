@@ -28,4 +28,9 @@
     Private Sub btSalir_Click(sender As Object, e As EventArgs) Handles btSalir.Click
         Me.Close()
     End Sub
+
+    Private Sub btInstrucciones_Click(sender As Object, e As EventArgs) Handles btInstrucciones.Click
+        Intrucciones.Show()
+        Me.Hide()
+    End Sub
 End Class

@@ -19,3 +19,4 @@ C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de P
 C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\obj\Debug\net6.0-windows\ref\JuegoIngles.dll
 C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\obj\Debug\net6.0-windows\JuegoIngles.Resources.resources
 C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\obj\Debug\net6.0-windows\JuegoIngles.Modelo.resources
+C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\obj\Debug\net6.0-windows\JuegoIngles.Intrucciones.resources

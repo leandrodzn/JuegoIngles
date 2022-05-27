@@ -4,6 +4,9 @@
     <Compile Update="Creditos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Intrucciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="JuegoPrincipiante.vb">
       <SubType>Form</SubType>
     </Compile>
