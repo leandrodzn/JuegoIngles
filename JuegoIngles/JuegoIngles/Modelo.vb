@@ -18,11 +18,7 @@
 
         actualizar()
 
-
-
         'Me.PictureBox1.Image = Image.FromFile("C:\Users\leodz\OneDrive\Documentos\UADY LIS\4 semestre\Teoría de Lenguajes de Programación\proyecto visual\JuegoIngles\JuegoIngles\images\Prin" + numero + ".png")
-
-
 
     End Sub
 
